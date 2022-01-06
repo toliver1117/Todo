@@ -1,4 +1,4 @@
-
+#for more details, please see gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: npm install
     command: export HMR_HOST=`gp url 3000` && npm run dev
@@ -10,3 +10,10 @@ ports:
 vscode:
   extensions:
     - svelte.svelte-vscode
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+      
